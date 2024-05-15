@@ -9,8 +9,6 @@ function Playlist(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    setPlaylistName('')
-
   }
 
   return (
