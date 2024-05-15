@@ -1,7 +1,15 @@
 import { useState } from "react";
 
+import TrackLlist from "../Tracklist/Tracklist";
+
 function Playlist(props) {
   const [playlistName, setPlaylistName] = useState('')
+
+  const [songList, setSongList] = useState([
+    {id: '1-4', song: 'Bo', artist: 'rauw', album:'staturn'},
+    {id: '1-6', song: 'Bonita', artist: 'yankee', album:'gasoline'},
+    {id: '3-6', song: 'best', artist:'Karol-G', album:'Manana Sera Mas Bonito'}
+  ])
 
   const handlePlaylistNameChange = ({target}) => {
     setPlaylistName(target.value)
@@ -21,7 +29,7 @@ function Playlist(props) {
           onChange={handlePlaylistNameChange}
         />
         <div>
-          songs will go here
+          <TrackLlist list={songList} symbol='del' />
         </div>
         <button type="submit">SAVE TO SPOTIFY</button>
       </form>

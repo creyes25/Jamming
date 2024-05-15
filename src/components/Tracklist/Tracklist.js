@@ -1,10 +1,10 @@
 import Track from "../Track/Track"
 
-function TrackLlist({resultsList, symbol}) {
+function TrackLlist({list, type}) {
   return (
     <div>
-      {resultsList.map(result => (
-        <Track track={result} symbol={symbol} />
+      {list.map(result => (
+        <Track track={result} type={type} />
       ))}
     </div>
   )

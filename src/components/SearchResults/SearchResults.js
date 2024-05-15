@@ -11,7 +11,7 @@ function SearchResults(props) {
   return (
     <div>
       <h1>Results</h1>
-      <TrackLlist resultsList={results} symbol={'add'} />
+      <TrackLlist list={results} type={'add'} />
     </div>
   )
 }
