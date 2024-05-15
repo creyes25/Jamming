@@ -5,6 +5,8 @@ import './App.css';
 import SearchBar from './components/SearchBar/SearchBar';
 import SearchResults from './components/SearchResults/SearchResults';
 
+import Playlist from './components/Playlist/Playlist';
+
 function App() {
   const [searchVal, setSearchVal] = useState('')
 
@@ -19,6 +21,7 @@ function App() {
         <SearchBar handleSearchVal={handleSearchVal} />
       </header>
       <SearchResults />
+      <Playlist />
     </div>
   );
 }

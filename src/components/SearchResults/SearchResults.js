@@ -6,7 +6,10 @@ function SearchResults(props) {
     <div>
       <h1>Results</h1>
       <div>
-        {}
+        Results will go here...
+        <br/>
+        <br/>
+        <br/>
       </div>
     </div>
   )
