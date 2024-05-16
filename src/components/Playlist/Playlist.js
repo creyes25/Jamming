@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import TrackLlist from "../Tracklist/Tracklist";
 
-function Playlist({playlistName, setPlaylistName, playlist, removeFromPlaylist}) {
+function Playlist({playlistName, setPlaylist, setPlaylistName, playlist, removeFromPlaylist}) {
 
 
   const handlePlaylistNameChange = ({target}) => {
@@ -11,6 +11,7 @@ function Playlist({playlistName, setPlaylistName, playlist, removeFromPlaylist})
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    setPlaylist([])
   }
 
   return (
