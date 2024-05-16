@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 
 import TrackLlist from "../Tracklist/Tracklist";
 
-function Playlist({playlist, removeFromPlaylist}) {
-  const [playlistName, setPlaylistName] = useState('')
+function Playlist({playlistName, setPlaylistName, playlist, removeFromPlaylist}) {
+
 
   const handlePlaylistNameChange = ({target}) => {
     setPlaylistName(target.value)

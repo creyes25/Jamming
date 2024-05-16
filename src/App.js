@@ -15,9 +15,10 @@ const results = [
 
 function App() {
   const [searchVal, setSearchVal] = useState('')
-  
+
   const [searchResults, setSearchResults] = useState(results)
 
+  const [playlistName, setPlaylistName] = useState('')
   const [songPlayList, setSongPlayList] = useState([])
 
   const handleSearchVal = (val) => {
@@ -50,7 +51,9 @@ function App() {
       />
       <Playlist 
         playlist={songPlayList} 
-        removeFromPlaylist={removeFromPlaylist} 
+        removeFromPlaylist={removeFromPlaylist}
+        playlistName={playlistName}
+        setPlaylistName={setPlaylistName} 
       />
     </div>
   );
