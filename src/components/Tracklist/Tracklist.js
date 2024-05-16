@@ -1,10 +1,15 @@
 import Track from "../Track/Track"
 
-function TrackLlist({list, type}) {
+function TrackLlist({list, type, removeFromPlaylist, addToPlaylist}) {
   return (
     <div>
-      {list.map(result => (
-        <Track track={result} type={type} />
+      {list && list.map(result => (
+        <Track 
+          track={result} 
+          type={type} 
+          removeFromPlaylist={removeFromPlaylist} 
+          addToPlaylist={addToPlaylist}
+        />
       ))}
     </div>
   )
